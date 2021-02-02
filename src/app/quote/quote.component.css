@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&family=Permanent+Marker&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 *{
-  background-image: url("./assets/bck.jpeg");
+  background-image: url("src/assets/bck.jpeg");
   background-repeat: no-repeat;
   background-size: cover ;
   opacity: 4;
@@ -18,4 +18,8 @@ h5{
 }
 .class{
   font-family: 'Kaushan Script', cursive;
+}
+.foot{
+  font-size: 18px;
+  padding-top: 10vmin;
 }

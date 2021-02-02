@@ -12,9 +12,16 @@ export class QuoteComponent implements OnInit {
     new Quotes(0, 'Akiba haiozi', 'Kamau', 'Mwai', new Date(2020, 1, 1)),
    ];
    // tslint:disable-next-line: typedef
-   toggleDetails(index){
+  //  toggleDetails(index){
+  //   this.quotes[index].showAuthor = !this.quotes[index].showAuthor;
+  // }
+
+
+  // tslint:disable-next-line: typedef
+  toggleDetails(index){
     this.quotes[index].showAuthor = !this.quotes[index].showAuthor;
   }
+
   // tslint:disable-next-line: typedef
   deleteQuote(isComplete, index){
     if (isComplete){
