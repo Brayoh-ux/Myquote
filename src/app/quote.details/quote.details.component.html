@@ -4,8 +4,5 @@
  <p class="now">
    <sup>done {{quote.time|dateCount}} day(s) ago.</sup>
  </p>
- <div >
-   <button>Up Vote</button>
-   <button>down Vote</button>
- </div>
+ <app-likes></app-likes>
  <button class="btn btn-danger" (click)='quoteDelete(true)'>Delete Quote</button>

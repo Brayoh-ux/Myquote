@@ -4,7 +4,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6" >
-        <div appHighlight *ngFor='let quote of quotes; let i = index' class="card border-success mb-3" style="max-width: 18rem;">
+        <div  *ngFor='let quote of quotes; let i = index' class="card border-success mb-3" style="max-width: 18rem;">
           <div class="class card-header bg-transparent border-success">
             Date created : {{quote.time|date|uppercase}}<br>
           </div>
