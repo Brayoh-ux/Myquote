@@ -3,21 +3,28 @@
   <hr>
   <div class="row">
       <div class="col-md-6">
-          <ul>
-              <div *ngFor='let quote of quotes; let i = index'>
-                  <li>
-                      Date created : {{quote.time|date|uppercase}} <br>
-                    Posted by : {{quote.poster}} <br>
-                    <button (click)='toggleDetails(i)' class="btn btn-primary">Details..</button>
-                    <app-quote-details *ngIf='quote.showAuthor' [quote]='quote'
-                     (isComplete) = 'deleteQuote($event,i)'></app-quote-details>
-
-                </li>
-              </div>
-          </ul>
+        <div *ngFor='let quote of quotes; let i = index' class="card border-success mb-3" style="max-width: 18rem;">
+          <div class="class card-header bg-transparent border-success">
+            Date created : {{quote.time|date|uppercase}}<br>
+          </div>
+          <div class="card-body text-success">
+            <h5 class="card-title">
+              Posted by : {{quote.poster}}
+            </h5>
+            <p class="card-text">
+              <button (click)='toggleDetails(i)' class="btn btn-primary">Details..</button>
+            </p>
+          </div>
+        <div class="card-footer bg-transparent border-success">
+          <app-quote-details *ngIf='quote.showAuthor' [quote]='quote'
+            (isComplete) = 'deleteQuote($event,i)'></app-quote-details>
+        </div>
+        </div>
       </div>
       <div class="col-md-6">
-          <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
-      </div>
+        <app-quote-form (addQuote)="addNewQuote($event)">
+        </app-quote-form>
+    </div>
   </div>
 </div>
+

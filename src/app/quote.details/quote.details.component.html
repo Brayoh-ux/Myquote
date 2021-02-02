@@ -1,7 +1,15 @@
-<p>
-  Quote : {{quote.text}}
+<p class="now">
+  <span>Quote :</span> {{quote.text}}
  </p>
- <p>
-   done {{quote.time|dateCount}} day(s) ago.
+ <p class="now">
+   <sup>done {{quote.time|dateCount}} day(s) ago.</sup>
  </p>
- <button (click)='quoteDelete(true)'>Delete Quote</button>
+ <div class="row">
+   <div class="col-md-6">
+     <button class="buton">upote</button>
+   </div>
+   <div class="col-md-6">
+     <button id="counter" class="butonn"> Downvote</button>
+   </div>
+ </div>
+ <button class="btn btn-danger" (click)='quoteDelete(true)'>Delete Quote</button>

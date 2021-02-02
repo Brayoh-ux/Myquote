@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+*{
+  background-image: url("src/img/bck.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover ;
+  opacity: 4;
+  color: aliceblue;
+}
+h1{
+  text-align: center;
+  font-family: 'Lobster Two', cursive;
+  color: white;
+}
+h5{
+  font-family: 'Kaushan Script', cursive;
+  color: aliceblue;
+}
+.class{
+  font-family: 'Kaushan Script', cursive;
+}

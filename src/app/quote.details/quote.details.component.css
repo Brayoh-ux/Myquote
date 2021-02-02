@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+.now{
+  font-family: 'Kaushan Script', cursive;
+  font-size: 4vmin;
+}
+span{
+  color: green;
+}
+.buton{
+  border-radius: 7px;
+  background-color: red;
+  margin-bottom: 6px;
+}
+.butonn{
+  border-radius: 7px;
+  background-color: blue;
+  margin-bottom: 6px;
+}
