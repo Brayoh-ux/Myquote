@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&family=Permanent+Marker&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 *{
-  background-image: url("src/img/bck.jpeg");
+  background-image: url("./assets/bck.jpeg");
   background-repeat: no-repeat;
   background-size: cover ;
   opacity: 4;
